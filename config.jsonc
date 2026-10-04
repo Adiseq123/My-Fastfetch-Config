@@ -1,0 +1,120 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+      "padding": {
+      "top": 3,
+      "left": 3,
+      "right": 3,
+      "bottom": 3
+    }
+  },
+  "display": {
+    "separator": "  "
+  },
+  "modules": [
+    // tytułowa część
+    {
+      "type": "title",
+      "format": "{#1}╭───────────── {#}{user-name-colored}{#1}@{#}{host-name-colored} ─────────────╮"
+    },
+    // Informacje o systemie
+    {
+      "type": "custom",
+      "format": "{#1}│ {#4}Informacje o systemie:"
+    },
+    {
+      "type": "os",
+      "key": "{#separator}│  {#keys}System:"
+    },
+    {
+      "type": "kernel",
+      "key": "{#separator}│  {#keys}Kernel:"
+    },
+    {
+      "type": "uptime",
+      "key": "{#separator}│  {#keys}Czas Działania:"
+    },
+    {
+      "type": "packages",
+      "key": "{#separator}│  {#keys}Pakiety:",
+      "format": "{all}"
+    },
+    {
+      "type": "custom",
+      "format": "{#1}│"
+    },
+    // Środowisko graficzne
+    {
+      "type": "custom",
+      "format": "{#1}│ {#4}Środowisko graficzne:"
+    },
+    {
+      "type": "de",
+      "key": "{#separator}│  {#keys}Środowisko graficzne:"
+    },
+    {
+      "type": "wm",
+      "key": "{#separator}│  {#keys}Menadżer okien:"
+    },
+    {
+      "type": "wmtheme",
+      "key": "{#separator}│  {#keys}Motyw:"
+    },
+    {
+      "type": "display",
+      "key": "{#separator}│  {#keys}Rozdzielczość monitora:"
+    },
+    {
+      "type": "shell",
+      "key": "{#separator}│  {#keys}Powłoka:"
+    },
+    {
+      "type": "terminalfont",
+      "key": "{#separator}│  {#keys}Czcionka:"
+    },
+    {
+      "type": "custom",
+      "format": "{#1}│"
+    },
+    // Informacje o podzespołach
+    {
+      "type": "custom",
+      "format": "{#1}│ {#4}Informacje o podzespołach:"
+    },
+    {
+      "type": "cpu",
+      "key": "{#separator}│  {#keys}Procesor:"
+    },
+    {
+      "type": "gpu",
+      "key": "{#separator}│  {#keys}Karta graficzna:"
+    },
+    {
+      "type": "memory",
+      "key": "{#separator}│  {#keys}Pamieć RAM:"
+    },
+    {
+      "type": "disk",
+      "key": "{#separator}│  {#keys}Dysk (/):",
+      "folders": "/"
+    },
+    {
+      "type": "custom",
+      "format": "{#1}│"
+    },
+    // Kolory
+    {
+      "type": "colors",
+      "key": "{#separator}│",
+      "symbol": "circle"
+    },
+    // końcowa linia
+    {
+      "type": "custom",
+      "format": "{#1}╰────────────────────────────────────────╯"
+    }
+  ]
+}
+
+//Konfiguracja napisana przez Adiska wszystkie prawa zastrzeżone :D
+//pozdro jak to czytasz
